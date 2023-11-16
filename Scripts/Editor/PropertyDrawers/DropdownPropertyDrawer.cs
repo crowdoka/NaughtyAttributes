@@ -18,7 +18,7 @@ namespace NaughtyAttributes.Editor
 
             float propertyHeight = AreValuesValid(values, fieldInfo)
                 ? GetPropertyHeight(property)
-                : GetPropertyHeight(property) + GetHelpBoxHeight();
+                : GetPropertyHeight(property);
 
             return propertyHeight;
         }
