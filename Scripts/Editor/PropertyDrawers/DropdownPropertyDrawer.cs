@@ -114,10 +114,7 @@ namespace NaughtyAttributes.Editor
             }
             else
             {
-                string message = string.Format("Invalid values with name '{0}' provided to '{1}'. Either the values name is incorrect or the types of the target field and the values field/property/method don't match",
-                    dropdownAttribute.ValuesName, dropdownAttribute.GetType().Name);
-
-                DrawDefaultPropertyAndHelpBox(rect, property, message, MessageType.Warning);
+                EditorGUI.PropertyField(rect, property, true);
             }
 
             EditorGUI.EndProperty();
